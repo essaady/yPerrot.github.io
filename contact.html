@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Compiled and minified JavaScript -->
+  <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="js/formulaire.js"></script>
+	<!-- icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <style>
+
+
+
+  </style>
+  <script>
+  function validerForm(){
+  var retour=false;
+  // Récupérer les éléments nécessaires dans la page
+  var nom= document.getElementById("nom"); // tel_fixe est un objet de type input
+  var sujet= document.getElementById("sujet");
+  // récupérer les éléments à mettre en rouge!!!
+  var libelles = document.getElementsByClassName("libelle");// libelles est tableau de <div>
+  var mail = document.getElementById("mail");
+  var msg = document.getElementById("msg");
+  var msg_erreur = document.getElementById("msg_erreur"); // paragraphe sous le formulaire
+
+  // Tester la saisie d'au moins un numéro
+  if ((mail.value=="") && (msg.value=="")) {
+          //alert("Vous devez saisir au moins un numero de telephone");
+        retour = false;
+        msg_erreur.innerHTML="vous devez saisir au moins un nom";
+        libelles[2].className="libelle erreur";
+        libelles[3].className="libelle erreur";
+        libelles[2].textContent="Tél Prof";
+        libelles[3].textContent="Mobile";
+        id_fixe.className="erreur";
+        id_mob.className="erreur";
+        }
+  else retour = true;
+  return retour;
+  }
+  </script>
+
+  </head>
+  <body>
+	<header>
+
+		<div class="navbar-fixed">
+		  <nav>
+			<div class="nav-wrapper teal lighten-2">
+
+			  <ul id="nav-mobile" class="left hide-on-med-and-down">
+
+				<li ><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+				<li><a href="profil.html"><i class="material-icons left">account_box</i>Profile</a></li>
+				<li class="active"><a href="contact.html"><i class="material-icons left">contacts</i>Contact</a></li>
+				</ul>
+			</div>
+		  </nav>
+        </div>
+
+	</header>
+  <main>
+	<article>
+    <div  class="marge">
+			<div class="row">
+				<div class="col s12">
+					<h2>Contact</h2>
+				</div>
+
+        <div class="col s6" >
+        <div class="marge">
+          <div class="col s12 ">
+<div class="card">
+      <div class="card-content dark-grey" >
+        <span class="card-title" > My details  </span>
+      </div>
+      <div class="card-content InfoCoo" >
+        <i class="material-icons left">location_on</i><p>1 Rue Mostaganem, 29200 Brest, FRANCE </p>
+      </div>
+      <div class="card-content InfoCoo">
+        <i class="material-icons left">phone_android</i><p>+33 6 84 22 82 52 </p>
+      </div>
+      <div class="card-content InfoCoo">
+        <i class="material-icons left">mail</i><p>y.perrot@outlook.fr </p>
+      </div>
+</div>
+
+</div>
+      </div>
+    </div>
+
+
+    <div class="col s6" >
+      <div class="card">
+          <div class="card-content">
+            <p>Form</p>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="icon_prefix" type="text" class="validate">
+                      <label for="icon_prefix">Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">phone</i>
+                      <input id="icon_telephone" type="tel" class="validate">
+                      <label for="icon_telephone">Phone number</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">email</i>
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                      <!--<span class="helper-text" data-error="wrong" data-success="right">Helper text</span>  -->
+                    </div>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                      <label for="icon_prefix2">Posts</label>
+                    </div>
+                    <div class="col s12 center-align">
+                      <a class="waves-effect waves-light btn" id="buton" onclick="formulaire()">Send</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+      </div>
+
+    </div>
+
+
+    </div>
+			</div>
+
+		</div>
+
+
+
+	</article>
+</main>
+
+  </body>
+  <footer class="page-footer teal lighten-2" >
+    <div class="col s12 right-align text-footer" >
+        Yohan PERROT - IUT de Lannion
+      </div>
+  </footer>
+</html>

@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+.prenom{
+   margin-right:10 px;
+   display:none;
+
+   float:left;
+}
+.nom{
+	 display:none;
+	 float:right;
+}
+
+.Site1{
+	margin-top : 10px;
+}
+
+.fondue-text{
+  position:relative;
+  display: block;
+
+}
+
+.fondue-text::after{
+  content: "";
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 28%;
+  bottom: 0px;
+  position: absolute;
+}
+
+.card .card-image .card-title{
+  padding-bottom: 0px;
+}
+
+.text-footer{
+  padding-bottom:2%;
+  margin-right: 2%;
+}
+
+#link{
+  /*margin-top: 5%;*/
+}
+
+#ImgPDF{
+  margin-top: 0px;
+  width:10%;
+  height:10%;
+  margin-left:0px;
+}
+
+
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+.liste2{
+  margin-left: 5%;
+}
+
+.liste3{
+  margin-left: 10%;
+}
+
+
+.marge{
+  margin-left:5%;
+}
+
+
+
+.decal{
+  margin-left: 5%;
+}
+
+.InfoCoo{
+  padding-top: 0px;
+}
+
+footer{padding-bottom: 2%;}
+
+.styleDiv{
+  margin-left:2%;margin-right:2%;
+}

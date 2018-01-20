@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+
+	<link rel="stylesheet" href="style.css" >
+
+
+	<!-- Compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+	<!-- icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+	<script>
+
+  var elem = document.querySelector('.collapsible');
+  var instance = M.Collapsible.init(elem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+	</script>
+  </head>
+  <body>
+	<header>
+
+		<div class="navbar-fixed">
+		  <nav>
+			<div class="nav-wrapper teal lighten-2">
+
+			  <ul id="nav-mobile" class="left hide-on-med-and-down">    <!-- 	<li><i class="material-icons large">home</i></li> -->
+
+				<li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+				<li class="active"><a href="profil.html"><i class="material-icons left">account_box</i>Profile</a></li>
+				<li><a href="contact.html"><i class="material-icons left">contacts</i>Contact</a></li>
+				</ul>
+			</div>
+		  </nav>
+        </div>
+
+	</header>
+<main>
+	<article class="marge">
+
+			<div class="row ">
+        <div class="col s12">
+				      <div class="col s12">
+					           <h2>Formation</h2>
+              </div>
+        </div>
+
+
+        <div class="col s12">
+          <ul class="collapsible collapsible-accordion marge" >
+            <li>
+              <div class="collapsible-header active"><b>Me</b></div>
+                <div class="collapsible-body">
+                  <div class="row">
+                      <div class="col s4">Full Name : Yohan PERROT</div>
+                      <div class="col s4">Birth date : Decembrer 22, 1998</div>
+                      <div class="col s4">Nationality : French</div>
+                  </div>
+                </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><b>Education</b></div>
+              <div class="collapsible-body">
+                <span>- HND Foundation Degree in Network Engineering & Telecom – Lannion, FRANCE <i class="grey-text">(2016-2018)</i> </span>
+                </br>
+                <span>- Equivalent to 5 “A levels” including Maths and Physics – Saint-Sébastien Hight School – Landerneau, FRANCE <i class="grey-text">(2013-2016)</i></span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><b>Technical skills</b></div>
+                <div class="collapsible-body">
+                  <div class="row">
+                    <div class="col s4">
+                      <ul>
+                        <li><u>Web development :</u></li>
+                        <li class="liste2">HTML</li>
+                        <li class="liste2">CSS</li>
+                        <li class="liste2">JavaScript</li>
+                        <li class="liste2">PHP</li>
+                      </ul>
+                    </div>
+                    <div class="col s4">
+                      <ul>
+                        <li><u>English :</u></li>
+                        <li class="liste2">Level B1+</li>
+                        <li class="liste2">English's Project : Creating a short film</li>
+                        <li class="liste3">script redaction</li>
+                        <li class="liste3">Story-bord reading</li>
+                        <li class="liste3">production and acting</li>
+                      </ul>
+                    </div>
+                    <div class="col s4">
+                      <ul>
+                        <li><u>Networks :</u></li>
+                        <li class="liste2">Wi-Fi</li>
+                        <li class="liste2">Telephony</li>
+                        <li class="liste2">Conceiving,repairing and securing a cumputer networks</li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><b>Hobbies</b></div>
+                  <div class="collapsible-body">
+                    <span>- Horse-riding <i class="grey-text">(9 years)</i> </span>
+                    </br>
+                    <span>- Archering <i class="grey-text">(2 years)</i></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          <div class="col s2 offset-s10" >
+            <span class="flow-text"><a href="img/test.pdf">Link to my CV</a></span>
+          </div>
+        </div>
+	</article>
+</main>
+<footer class="page-footer teal lighten-2" >
+  <div class="col s12 right-align text-footer" >
+      Yohan PERROT - IUT de Lannion
+    </div>
+</footer>
+</body>
+</html>
