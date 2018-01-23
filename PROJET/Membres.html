@@ -24,68 +24,100 @@
   <body>
 
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+ 	<div class="navbar-wrapper">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Club hippique de l'Elorn</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Accueil</a></li>
-            <li><a href="#about">A propos</a></li>
-            <li><a href="#contact">Contacts</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Club Hippique de l'Elorn</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a href="./Index.html">Index</a></li>
+                <li class="active"><a href="./FAQ.html">FAQ</a></li>
+                <li ><a href="./Membres.html">Membres</a></li>		 
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu déroulant <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Lien1</a></li>
+                    <li><a href="#">Lien2</a></li>
+                    <li><a href="#">Lien3</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
       </div>
-    </nav>
+    </div>
+
 
     <div class="container">
 
-      <div class="starter-template">
-        <h1>Club Hippique de l'Elorn</h1>
-        <p class="lead"><br> </p>
-      </div>
+
+
+	   <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+    <article>
+
+	<div class="table-responsive">
+		<table class="table" table-bordered="" table-hover="" table-striped="">
+			<thead>
+				<tr>
+					<th>Photo</th>
+					<th>Nom</th>
+				</tr>
+				<tr></tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img src="images/1" alt="image-1"></td>
+					<td>Membre 1</td>
+				</tr>
+				<tr>
+					<td><img src="images/1" alt="image-1"></td>
+					<td>Membre 2</td>
+				</tr>
+				<tr>
+					<td><img src="images/1" alt="image-1"></td>
+					<td>Membre 3</td>
+				</tr>
+			</tbody>
+		</table>    
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   		<script src="js/jquery.min.js"></script>
+   		<!-- Include all compiled plugins (below), or include individual files as needed -->
+    		<script src="js/bootstrap.min.js"></script>
+  
+
+
+</div>
+	    
+      <!-- FOOTER -->
+      <footer>
+        <p><a href="https://validator.w3.org">Lien</a> vers le validator HTML</p>
+        <p><a href="https://jigsaw.w3.org/css-validator/">Lien</a> vers le validator CSS</p>
+      </footer>
+
+        </article>
+        </div>
 
     </div><!-- /.container -->
-	<article>
-	<?php
-
-	$nb=0;
-	$dir = opendir("./images");
-	echo '<div class='."table-responsive".'>';
-	echo '<table class='."table  table-bordered  table-hover table-striped".'>'."\n";
-	echo '<thead>';
-		echo '<tr>';
-		echo '<th>'.'Photo'.'</th>';
-		echo '<th>'.'Nom'.'</th>';
-		echo '</tr>'."\n";
-		echo '<tr>';
-	echo '</thead>';
-	echo '<tbody>';
-		echo '<td>'.'<img src='."images/1".' alt="image-1" />'.'</td>';
-		echo '<td>'."Membre 1".'</td>';
-		echo '</tr>'."\n";
-		echo '<tr>';
-		echo '<td>'.'<img src='."images/1".' alt="image-1" />'.'</td>';
-		echo '<td>'."Membre 2".'</td>';
-		echo '</tr>'."\n";
-		echo '<tr>';
-		echo '<td>'.'<img src='."images/1".' alt="image-1" />'.'</td>';
-		echo '<td>'."Membre 3".'</td>';
-		echo '</tr>'."\n";
-	echo '</tbody>';
-	echo '</table>';
-	closedir($dir);
-	?>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
